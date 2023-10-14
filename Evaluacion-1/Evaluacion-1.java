@@ -40,6 +40,19 @@ public class Evaluacion1 {
             Almacen [i][j] = 0;
             }
         }
+        for (i = 0; i < 5; i++){
+        Almacen [contenedores [i][0]][contenedores [i][1]] = (i+1);
+        }
+        for(i = 0; i < 5; i++){
+            if (contenedores [i][2] == 0){
+            // Si la orientacion es horizontal
+            Almacen [contenedores [i][0]][(contenedores [i][1])+i] = (i+1);
+            }
+            if (contenedores [i][2] == 1){
+            // Si la orientacion es vertical
+            Almacen [(contenedores [i][0])+i][contenedores [i][1]] = (i+1);
+            }
+        }
         for(i = 0; i < 10; i++){
             for(j = 0; j < 10; j++){
             // imprimimos la matriz Almacen
