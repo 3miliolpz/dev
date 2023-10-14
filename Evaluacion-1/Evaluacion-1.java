@@ -35,10 +35,17 @@ public class Evaluacion1 {
                 posiciones[i][2] = teclado.nextInt();
         }
         for(i = 0; i < 10; i++){
-        for(j = 0; j < 10; j++){
+            for(j = 0; j < 10; j++){
             // llenamos el Almacen con solo 0
             Almacen [i][j] = 0;
+            }
         }
+        for(i = 0; i < 10; i++){
+            for(j = 0; j < 10; j++){
+            // imprimimos la matriz Almacen
+            System.out.print(Almacen [i][j]+" ");
+            }
+            System.out.println("");
         }
         do {
             System.out.println("\033[H\033[2J");
