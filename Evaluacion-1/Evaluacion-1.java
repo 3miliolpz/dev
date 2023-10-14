@@ -34,6 +34,12 @@ public class Evaluacion1 {
                 System.out.println("Ingrese la horientacion del contenedor: (0 Horizontal, 1 Vertical)");
                 posiciones[i][2] = teclado.nextInt();
         }
+        for(i = 0; i < 10; i++){
+        for(j = 0; j < 10; j++){
+            // llenamos el Almacen con solo 0
+            Almacen [i][j] = 0;
+        }
+        }
         do {
             System.out.println("\033[H\033[2J");
             System.out.flush();
