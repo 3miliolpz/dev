@@ -32,11 +32,15 @@ public class Matrices {
                 moda = Arreglo[i];
             }
         }
-
-
-
-
-
-
+        System.out.println("la moda de todos los datos es: "+moda);
+        Arrays.sort(Arreglo); // Para calcular la mediana
+        if(datos.length % 2 == 0){
+            int med1 = Arreglo[tamanio / 2 - 1];
+            int med2 = Arreglo[tamanio / 2];
+            med = (med1 + med2)/2;
+        } else {
+            med = Arreglo [tamanio / 2]
+        }
+        
     }
 }
